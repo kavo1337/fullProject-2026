@@ -117,7 +117,7 @@ namespace app.CLIENT.Views.Monitoring {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/app.DESCKTOP;component/views/monitoring/monitoringpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/app.DESCKTOP;V1.0.0.0;component/views/monitoring/monitoringpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Monitoring\MonitoringPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
