@@ -53,7 +53,7 @@ namespace app.DESCKTOP.Views.Dashboard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/app.DESCKTOP;V1.0.0.0;component/views/dashboard/dashboardpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/app.DESCKTOP;component/views/dashboard/dashboardpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Dashboard\DashboardPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

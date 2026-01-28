@@ -19,57 +19,75 @@
 
         <Border Grid.Row="1" Background="White" BorderBrush="#E3E3E3" BorderThickness="1" CornerRadius="6" Padding="12" Margin="0,0,0,12">
             <StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
-                    <TextBlock Text="Общее состояние" FontWeight="SemiBold" Margin="0,0,12,0"/>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,12,0">
-                        <Ellipse Fill="#1FCB7A" Width="10" Height="10" Margin="0,0,6,0"/>
-                        <TextBlock Text="Работает"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,12,0">
-                        <Ellipse Fill="#E74C3C" Width="10" Height="10" Margin="0,0,6,0"/>
-                        <TextBlock Text="Не работает"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Ellipse Fill="#F1C40F" Width="10" Height="10" Margin="0,0,6,0"/>
-                        <TextBlock Text="Обслуживание"/>
-                    </StackPanel>
-                </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <StackPanel Orientation="Horizontal" Margin="0,0,30,8">
-                        <TextBlock Text="Подключение" FontWeight="SemiBold" Margin="0,0,12,0"/>
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Общее состояние" FontWeight="SemiBold" Margin="0,0,12,10"/>
                         <StackPanel Orientation="Horizontal">
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/wifi.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/signal.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/plug.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4">
-                                <Image Source="/Views/Assets/Icons/usb.png" Width="16" Height="16"/>
-                            </Border>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                                <Button Padding="7" BorderThickness="0">
+                                    <Ellipse Fill="#1FCB7A" Width="20" Height="20"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="12,0,12,0">
+                                <Button Padding="7" BorderThickness="0">
+                                    <Ellipse Fill="#E74C3C" Width="20" Height="20"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Padding="7" BorderThickness="0">
+                                    <Ellipse Fill="#F1C40F" Width="20" Height="20"/>
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+                </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,30,8">
+                        <StackPanel>
+                            <TextBlock Text="Подключение" FontWeight="SemiBold" Margin="0,0,12,15"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/wifi.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/signal.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/plug.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4">
+                                    <Image Source="/Views/Assets/Icons/usb.png" Width="16" Height="16"/>
+                                </Border>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
-                        <TextBlock Text="Дополнительные статусы" FontWeight="SemiBold" Margin="0,0,12,0"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/exclamation-circle.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/exclamation-triangle.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
-                                <Image Source="/Views/Assets/Icons/thermometer-full.png" Width="16" Height="16"/>
-                            </Border>
-                            <Border Background="#F2F2F2" CornerRadius="4" Padding="4">
-                                <Image Source="/Views/Assets/Icons/unlock.png" Width="16" Height="16"/>
-                            </Border>
+                        <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Дополнительные статусы" FontWeight="SemiBold" Margin="0,0,12,15"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/exclamation-circle.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/exclamation-triangle.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4" Margin="0,0,6,0">
+                                    <Image Source="/Views/Assets/Icons/thermometer-full.png" Width="16" Height="16"/>
+                                </Border>
+                                <Border Background="#F2F2F2" CornerRadius="4" Padding="4">
+                                    <Image Source="/Views/Assets/Icons/unlock.png" Width="16" Height="16"/>
+                                </Border>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
+
+                    <StackPanel Margin="20,0,0,0">
+                        <TextBlock Text="Сортировка" VerticalAlignment="Center" Margin="0,0,6,15"/>
+                        <ComboBox x:Name="SortBox" Width="180" Height="28" Margin="0,0,12,0">
+                            <ComboBoxItem Content="По состоянию ТА" IsSelected="True"/>
+                            <ComboBoxItem Content="По времени"/>
+                        </ComboBox>
+                    </StackPanel>
+                    
                 </StackPanel>
 
                 <WrapPanel VerticalAlignment="Center">
@@ -93,11 +111,7 @@
                         <ComboBoxItem Content="Payment error"/>
                     </ComboBox>
 
-                    <TextBlock Text="Сортировка" VerticalAlignment="Center" Margin="0,0,6,0"/>
-                    <ComboBox x:Name="SortBox" Width="180" Height="28" Margin="0,0,12,0">
-                        <ComboBoxItem Content="По состоянию ТА" IsSelected="True"/>
-                        <ComboBoxItem Content="По времени"/>
-                    </ComboBox>
+                    
 
                     <Button Content="Применить" Height="28" Margin="0,0,6,0" Click="Apply_Click"/>
                     <Button Content="Очистить" Height="28" Click="Clear_Click"/>
@@ -114,7 +128,7 @@
                       IsReadOnly="True">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="№" Binding="{Binding RowNumber}" Width="50"/>
-                        <DataGridTextColumn Header="ТП" Binding="{Binding Tp}" Width="140"/>
+                        <DataGridTextColumn Header="ТП" Binding="{Binding TA}" Width="140"/>
 
                         <DataGridTemplateColumn Header="Связь" Width="120">
                             <DataGridTemplateColumn.CellTemplate>
@@ -216,9 +230,9 @@
             </Grid>
         </Border>
 
-        <StackPanel Grid.Row="3" Margin="0,15,0,0" Orientation="Vertical">
-            <TextBlock x:Name="TotalCountText"/>
-            <TextBlock x:Name="TotalCashText"/>
+        <StackPanel Grid.Row="3" Margin="0,15,0,0" Orientation="Horizontal">
+            <TextBlock x:Name="TotalCountText" FontWeight="Bold" Margin="0,0,10,0"/>
+            <TextBlock x:Name="TotalCashText" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Page>

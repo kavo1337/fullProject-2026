@@ -73,7 +73,7 @@ namespace app.CLIENT.Views.Monitoring
 					Rows.Add(new MonitoringRow
 					{
 						RowNumber = index++,
-						Tp = item.Provider,
+						TA = item.Provider,
 						Connection = item.ConnectionState,
 						Load = string.Join(", ", item.LoadItems.Select(l => $"{l.Name} {l.Percent}%")),
 						Cash = item.CashInMachine.ToString(),

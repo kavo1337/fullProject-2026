@@ -25,7 +25,7 @@ public sealed record LoadItem(string Name, int Percent);
 public sealed class MonitoringRow
 {
 	public int RowNumber { get; set; }
-	public string Tp { get; set; } = string.Empty;
+	public string TA { get; set; } = string.Empty;
 	public string Connection { get; set; } = string.Empty;
 	public string Load { get; set; } = string.Empty;
 	public string Cash { get; set; } = string.Empty;
