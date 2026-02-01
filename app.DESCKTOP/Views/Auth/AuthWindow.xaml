@@ -22,8 +22,8 @@
 
         <StackPanel Grid.Row="1">
             <TextBlock Text="ЛОГИН" FontSize="15"/>
-            <TextBox x:Name="LoginBox" Text="admin@gmail.com" Height="30" VerticalContentAlignment="Center"/>
-            <TextBlock Text="ЛОГИН" FontSize="15"/>
+            <TextBox x:Name="LoginBox" Text="test@mail.com" Height="30" VerticalContentAlignment="Center"/>
+            <TextBlock Text="ПАРОЛЬ" FontSize="15"/>
             <PasswordBox x:Name="PasswordBox" Password="test" Height="30" VerticalContentAlignment="Center"/>
         </StackPanel>
 
